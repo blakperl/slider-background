@@ -1,0 +1,34 @@
+#image-slider {
+    position: relative;
+    width: 100%;
+    /* height: 100vh; */
+    overflow: hidden;
+    background-image: url('/slider/images/bgone.png');
+    animation: fadeInOut 15s infinite;
+}
+
+@keyframes fadeInOut {
+
+    0%,
+    100% {
+        opacity: 1;
+        background-image: url('/slider/images/bgtwo.png');
+    }
+
+    20%,
+    60% {
+        opacity:0.8;
+        background-image: url('/slider/images/bgthree.png');
+    }
+
+    40%,
+    80% {
+        opacity: 1;
+        background-image: url('/slider/images/bgone.png');
+    }
+
+    100% {
+        opacity: 0.8;
+        background-image: url('/slider/images/bgfour.png');
+    }
+}
